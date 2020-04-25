@@ -9,7 +9,6 @@ public class Person {
         ArrayList<Student> list = new ArrayList<Student>();
 
         int ans = 0; //answer , sc
-        int cnf = 0;
 
         while (true) {
 
@@ -18,8 +17,8 @@ public class Person {
 
             if (ans == 1) { //[1]수강 신청을 눌렀을 경우.
                 System.out.println("수강하실 과목을 입력해주세요. ");
+                String stuname = sc.next(); //수강할 과목 입력받음.
 
-                String stuname = sc.next(); //수강할 과목 입력 받음.
                 Student std = new Student(stuname);
                 list.add(std); //list 에 std추가.
 
@@ -34,7 +33,7 @@ public class Person {
 
                 if (list.size() != 0) { //list안에 원소가 0개가 아닐경우 밑에가 실행
 
-                    System.out.println("검색중입니다.");
+                    System.out.println(" --- 검색중입니다. --- ");
 
 
 
@@ -54,3 +53,4 @@ public class Person {
         }
     }
 }
+
