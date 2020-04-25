@@ -12,7 +12,7 @@ public class Person {
 
         while (true) {
 
-            System.out.println("[1]수강 신청 [2]수강 목록 조회 ");
+            System.out.println("[1]수강 신청 [2]수강 목록 조회 [3]프로그램 종료");
             ans = sc.nextInt(); //값을 입력 받음
 
             if (ans == 1) { //[1]수강 신청을 눌렀을 경우.
@@ -47,7 +47,15 @@ public class Person {
 
                 }
 
-                else System.out.println("본 과목을 수강중이지 않습니다. "); // 수강목록 조회를 할경우에 신청하지 않은 경우
+                else if (list.size() == 0) {
+                    System.out.println("본 과목을 수강중이지 않습니다.");
+                }
+
+            }
+
+            else if ( ans == 3) {
+                System.out.println(" --- 프로그램을 종료합니다. --- ");
+                break;
             }
 
         }
