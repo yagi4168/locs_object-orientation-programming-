@@ -2,13 +2,13 @@ package PCU;
 
 import java.util.*;
 
-public class Person {
+public class Person implements Action{
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         ArrayList<Student> list = new ArrayList<Student>();
 
-        int ans = 0; //answer , sc
+        int ans = 0;
 
         while (true) {
 
@@ -37,11 +37,13 @@ public class Person {
 
 
 
-                    for (Student stu : list) { // for(변수타입 변수 : 배열) 밑에 반복 실행문. - 향상된 for문과 배열.
+                    for (Student stu : list) { // for(변수타입 변수 : 배열) 밑에 반복 실행문. - 향상된 for문 , for-each
 
                         if (stu.getName().equals(name)) {
-                            System.out.println("당신은 " + stu.getName() + "수업을 수강중입니다. ");
+                            System.out.println("당신은 " + stu.getName() + " 수업을 수강중입니다. ");
                         }
+
+                        else System.out.println("본 과목을 수강중이지 않습니다.");
 
                     }
 
@@ -59,6 +61,16 @@ public class Person {
             }
 
         }
+    }
+
+    @Override
+    public void goSchool() {
+        System.out.println("goSchool");
+    }
+
+    @Override
+    public void goHome() {
+        System.out.println("goHome");
     }
 }
 

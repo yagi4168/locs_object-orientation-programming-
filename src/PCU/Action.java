@@ -2,11 +2,7 @@ package PCU;
 
 public interface Action {
 
-    public interface goSchool {
+    void goSchool();
+    void goHome();
 
-    }
-
-    public interface goHome {
-
-    }
-}
+}              //기능을 재정의?

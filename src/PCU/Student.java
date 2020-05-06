@@ -1,10 +1,6 @@
 package PCU;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
-import java.util.ArrayList;
-
-public class Student extends Person{
+public class Student extends Person implements Action {
 
     private String name; //수강 신청할 과목 이름.
 
@@ -22,13 +18,13 @@ public class Student extends Person{
         this.name = name;
     }
 
-
-    public interface goSchool {
-
+    @Override
+    public void goSchool() {
+        System.out.println("goSchool");
     }
 
-
-
-
+    @Override
+    public void goHome() {
+        System.out.println("goHome");
+    }
 }
-
