@@ -23,8 +23,13 @@ public class Person implements Action{
                 list.add(std); //list 에 std추가.
 
                 System.out.println(stuname + "가 수강신청 되었습니다.");
+<<<<<<< HEAD
 
                 System.out.println("no");
+=======
+                System.out.println("hello world");
+
+>>>>>>> f4cc8fec7be5e3254956615e7718231975e9ba4d
             }
 
             else if (ans == 2) { //[2]수강 목록 조회를 눌렀을 경우.
