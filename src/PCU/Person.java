@@ -24,7 +24,7 @@ public class Person implements Action{
 
                 System.out.println(stuname + "가 수강신청 되었습니다.");
 
-
+                System.out.println("no");
             }
 
             else if (ans == 2) { //[2]수강 목록 조회를 눌렀을 경우.
