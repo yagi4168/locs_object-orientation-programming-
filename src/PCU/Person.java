@@ -23,7 +23,7 @@ public class Person implements Action{
                 list.add(std); //list 에 std추가.
 
                 System.out.println(stuname + "가 수강신청 되었습니다.");
-
+                System.out.println("hello world");
 
             }
 
